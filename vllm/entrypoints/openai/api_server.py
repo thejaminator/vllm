@@ -974,7 +974,7 @@ if envs.VLLM_TORCH_PROFILER_DIR:
         return Response(status_code=200)
 
 
-if envs.VLLM_ALLOW_RUNTIME_LORA_UPDATING:
+if True:
     logger.warning(
         "LoRA dynamic loading & unloading is enabled in the API server. "
         "This should ONLY be used for local development!")
